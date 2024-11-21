@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCX to PDF Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .upload-container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .upload-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .file-input-container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #45a049;
+        }
+
+        .submit-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+
+        #status {
+            margin-top: 1rem;
+            padding: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .error {
+            background-color: #ffebee;
+            color: #c62828;
+        }
+
+        .success {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        #fileInput {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="upload-container">
+    <h1>DOCX to PDF Converter</h1>
+
+    <form class="upload-form" id="uploadForm">
+        <div class="file-input-container">
+            <input type="file"
+                   id="fileInput"
+                   accept=".docx"
+                   required>
+            <button type="submit"
+                    class="submit-btn"
+                    id="submitBtn">
+                Convert to PDF
+            </button>
+        </div>
+    </form>
+
+    <div id="status"></div>
+</div>
+
+<script>
+    const form = document.getElementById('uploadForm');
+    const fileInput = document.getElementById('fileInput');
+    const submitBtn = document.getElementById('submitBtn');
+    const status = document.getElementById('status');
+
+    function showStatus(message, isError = false) {
+        status.textContent = message;
+        status.style.display = 'block';
+        status.className = isError ? 'error' : 'success';
+    }
+
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (file && !file.name.toLowerCase().endsWith('.docx')) {
+            showStatus('Please select a DOCX file.', true);
+            fileInput.value = '';
+            submitBtn.disabled = true;
+        } else {
+            status.style.display = 'none';
+            submitBtn.disabled = false;
+        }
+    });
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const file = fileInput.files[0];
+
+        if (!file) {
+            showStatus('Please select a file.', true);
+            return;
+        }
+
+        const formData = new FormData();
+        formData.append('file', file);
+
+        submitBtn.disabled = true;
+        showStatus('Converting file...');
+
+        try {
+            const response = await fetch('http://localhost:8080/convert/docx-to-pdf', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!response.ok) {
+                throw new Error(`HTTP error! status: ${response.status}`);
+            }
+
+            // Get the response as a blob
+            const blob = await response.blob();
+
+            // Create a download link for the PDF
+            const url = window.URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = file.name.replace('.docx', '.pdf');
+            document.body.appendChild(a);
+            a.click();
+            window.URL.revokeObjectURL(url);
+            document.body.removeChild(a);
+
+            showStatus('File converted successfully! Downloading PDF...');
+            form.reset();
+        } catch (error) {
+            showStatus(`Error: ${error.message}`, true);
+        } finally {
+            submitBtn.disabled = false;
+        }
+    });
+</script>
+</body>
+</html>
