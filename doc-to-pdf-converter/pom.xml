@@ -21,6 +21,13 @@
 	</properties>
 
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-amqp</artifactId>
+			<version>3.2.0</version>
+		</dependency>
+
 		<!-- Spring Web dependency -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -56,10 +63,16 @@
 			<artifactId>poi-ooxml</artifactId>
 			<version>5.2.3</version>
 		</dependency>
-
-
-
-
+		<!-- https://mvnrepository.com/artifact/org.springframework.amqp/spring-amqp -->
+		<!-- <dependency>
+			<groupId>org.springframework.amqp</groupId>
+			<artifactId>spring-amqp</artifactId>
+			<version>3.2.0</version>
+		</dependency> -->
+		<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-amqp</artifactId>
+</dependency>
 	</dependencies>
 
 

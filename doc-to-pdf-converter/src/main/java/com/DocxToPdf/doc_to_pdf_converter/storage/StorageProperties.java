@@ -1,11 +1,9 @@
 package com.DocxToPdf.doc_to_pdf_converter.storage;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Configuration;
 
 @ConfigurationProperties("storage")
 public class StorageProperties {
-
     private String location = "upload-dir";
 
     public String getLocation() {

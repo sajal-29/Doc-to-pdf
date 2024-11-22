@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+storage:
+  location: ${user.home}/DocxToPdf/uploads
+
+queue:
+  conversion:
+    name: docx-pdf-conversion-queue
