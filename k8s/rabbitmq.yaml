@@ -35,15 +35,17 @@ metadata:
   labels:
     app: rabbitmq
 spec:
+  type: NodePort
   ports:
-    - port: 5672
-      targetPort: 5672
+    - port: 5672 # Internal RabbitMQ Broker Port
+      targetPort: 5672 # Container RabbitMQ Broker Port
       protocol: TCP
+      nodePort: 31672 # NodePort for accessing RabbitMQ Broker
       name: amqp
-    - port: 15672
-      targetPort: 15672
+    - port: 15672 # Internal RabbitMQ Management UI Port
+      targetPort: 15672 # Container Management UI Port
       protocol: TCP
+      nodePort: 31673 # NodePort for accessing Management UI
       name: management
   selector:
     app: rabbitmq
-  type: ClusterIP

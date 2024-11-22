@@ -47,10 +47,11 @@ metadata:
   labels:
     app: backend
 spec:
+  type: NodePort
   ports:
-    - port: 8080
-      targetPort: 8080
+    - port: 8080 # Internal Backend Application Port
+      targetPort: 8080 # Container Backend Port
       protocol: TCP
+      nodePort: 32080 # NodePort for accessing Backend Application
   selector:
     app: backend
-  type: ClusterIP
