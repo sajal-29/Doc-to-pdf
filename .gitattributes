@@ -1,3 +1,11 @@
+CMakeCache.txt export-ignore
+CMakeFiles/ export-ignore
+*.cmake export-ignore
+
+# Ignore typical CMake output and log files
+CMakeOutput.log export-ignore
+CMakeError.log export-ignore
+
 # Do not detect
 *.cc -linguist-detectable
 *.cpp -linguist-detectable
