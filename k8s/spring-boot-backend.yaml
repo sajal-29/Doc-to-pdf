@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: backend:latest
+          image: sajal29/converter-backend:latest
           ports:
             - containerPort: 8080
           env:
