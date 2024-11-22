@@ -1,0 +1,4 @@
+#Fri Nov 22 21:58:54 IST 2024
+base.0=D\:\\RapidFort Project\\pdf_man\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

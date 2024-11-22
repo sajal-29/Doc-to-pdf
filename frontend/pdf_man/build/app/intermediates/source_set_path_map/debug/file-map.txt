@@ -1,0 +1,16 @@
+com.example.pdf_man.app-jetified-window-1.0.0-beta04-0 C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\res
+com.example.pdf_man.app-core-1.6.0-1 C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\res
+com.example.pdf_man.app-jetified-window-java-1.0.0-beta04-2 C:\Users\sajal\.gradle\caches\8.9\transforms\bc7fa82d8a142f5d2eba625e3651af56\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.pdf_man.app-jetified-annotation-experimental-1.1.0-3 C:\Users\sajal\.gradle\caches\8.9\transforms\bea418861df2572bf3e9b9b14e2ccb03\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.pdf_man.app-debug-4 D:\RapidFort Project\pdf_man\android\app\src\debug\res
+com.example.pdf_man.app-main-5 D:\RapidFort Project\pdf_man\android\app\src\main\res
+com.example.pdf_man.app-pngs-6 D:\RapidFort Project\pdf_man\build\app\generated\res\pngs\debug
+com.example.pdf_man.app-resValues-7 D:\RapidFort Project\pdf_man\build\app\generated\res\resValues\debug
+com.example.pdf_man.app-rs-8 D:\RapidFort Project\pdf_man\build\app\generated\res\rs\debug
+com.example.pdf_man.app-mergeDebugResources-9 D:\RapidFort Project\pdf_man\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.pdf_man.app-mergeDebugResources-10 D:\RapidFort Project\pdf_man\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.pdf_man.app-merged_res-11 D:\RapidFort Project\pdf_man\build\app\intermediates\merged_res\debug
+com.example.pdf_man.app-packaged_res-12 D:\RapidFort Project\pdf_man\build\file_picker\intermediates\packaged_res\debug
+com.example.pdf_man.app-packaged_res-13 D:\RapidFort Project\pdf_man\build\flutter_plugin_android_lifecycle\intermediates\packaged_res\debug
+com.example.pdf_man.app-packaged_res-14 D:\RapidFort Project\pdf_man\build\fluttertoast\intermediates\packaged_res\debug
+com.example.pdf_man.app-packaged_res-15 D:\RapidFort Project\pdf_man\build\path_provider_android\intermediates\packaged_res\debug

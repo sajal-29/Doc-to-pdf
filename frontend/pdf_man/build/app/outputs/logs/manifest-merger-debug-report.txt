@@ -1,0 +1,153 @@
+-- Merging decision tree log ---
+application
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:2:5-32:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:24:5-31:19
+MERGED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sajal\.gradle\caches\8.9\transforms\9066d10607fb34852f7c5d07a7d64bc2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sajal\.gradle\caches\8.9\transforms\9066d10607fb34852f7c5d07a7d64bc2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:name
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+manifest
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+MERGED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-21:12
+MERGED from [:flutter_plugin_android_lifecycle] D:\RapidFort Project\pdf_man\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:fluttertoast] D:\RapidFort Project\pdf_man\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] D:\RapidFort Project\pdf_man\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\bc7fa82d8a142f5d2eba625e3651af56\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d8b230c7ede9c7849659ac3fbf865256\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\734158bf8439df8c06d1112a2df06e28\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\78332fdaf5baacfc8f9387ab560a05fb\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\739d5bf5fcd44704f4871970fff086ff\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\3022749281d338b79acb68c951aead45\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\sajal\.gradle\caches\8.9\transforms\80f46d9490cb224ffc18f1ad346593a1\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\474323fcb76fc8dddf94330b9d51c2b2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d3a4366698eada9b86397487f0d8c48f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\e1b8543f6f36efc9c9bce6fa6be9abb0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\1b981a8601f18ba7a2d58d505b598896\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d10f0d0bc7493196b0013160cb097dc9\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sajal\.gradle\caches\8.9\transforms\9066d10607fb34852f7c5d07a7d64bc2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\45a96d52dd56f7411950d4c1d1b2fbb9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\bea418861df2572bf3e9b9b14e2ccb03\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+	package
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:1-44:12
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:1:11-69
+queries
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:38:5-43:15
+MERGED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-19:15
+MERGED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-19:15
+intent#action:name:android.intent.action.PROCESS_TEXT+data:mimeType:text/plain
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:39:9-42:18
+action#android.intent.action.PROCESS_TEXT
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:40:13-72
+	android:name
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:40:21-70
+data
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:41:13-50
+	android:mimeType
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml:41:19-48
+uses-sdk
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+MERGED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] D:\RapidFort Project\pdf_man\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:flutter_plugin_android_lifecycle] D:\RapidFort Project\pdf_man\build\flutter_plugin_android_lifecycle\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] D:\RapidFort Project\pdf_man\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:fluttertoast] D:\RapidFort Project\pdf_man\build\fluttertoast\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\RapidFort Project\pdf_man\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] D:\RapidFort Project\pdf_man\build\path_provider_android\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\bc7fa82d8a142f5d2eba625e3651af56\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window-java:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\bc7fa82d8a142f5d2eba625e3651af56\transformed\jetified-window-java-1.0.0-beta04\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d8b230c7ede9c7849659ac3fbf865256\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d8b230c7ede9c7849659ac3fbf865256\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\734158bf8439df8c06d1112a2df06e28\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\734158bf8439df8c06d1112a2df06e28\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\78332fdaf5baacfc8f9387ab560a05fb\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\78332fdaf5baacfc8f9387ab560a05fb\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\739d5bf5fcd44704f4871970fff086ff\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\739d5bf5fcd44704f4871970fff086ff\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\3022749281d338b79acb68c951aead45\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\3022749281d338b79acb68c951aead45\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] C:\Users\sajal\.gradle\caches\8.9\transforms\8371f1327473a736e09ba851cde33771\transformed\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\sajal\.gradle\caches\8.9\transforms\80f46d9490cb224ffc18f1ad346593a1\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\sajal\.gradle\caches\8.9\transforms\80f46d9490cb224ffc18f1ad346593a1\transformed\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\474323fcb76fc8dddf94330b9d51c2b2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\474323fcb76fc8dddf94330b9d51c2b2\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d3a4366698eada9b86397487f0d8c48f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d3a4366698eada9b86397487f0d8c48f\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\e1b8543f6f36efc9c9bce6fa6be9abb0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\e1b8543f6f36efc9c9bce6fa6be9abb0\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\1b981a8601f18ba7a2d58d505b598896\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\1b981a8601f18ba7a2d58d505b598896\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d10f0d0bc7493196b0013160cb097dc9\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\sajal\.gradle\caches\8.9\transforms\d10f0d0bc7493196b0013160cb097dc9\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sajal\.gradle\caches\8.9\transforms\9066d10607fb34852f7c5d07a7d64bc2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sajal\.gradle\caches\8.9\transforms\9066d10607fb34852f7c5d07a7d64bc2\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\45a96d52dd56f7411950d4c1d1b2fbb9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\45a96d52dd56f7411950d4c1d1b2fbb9\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\bea418861df2572bf3e9b9b14e2ccb03\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\sajal\.gradle\caches\8.9\transforms\bea418861df2572bf3e9b9b14e2ccb03\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\main\AndroidManifest.xml
+		INJECTED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from D:\RapidFort Project\pdf_man\android\app\src\debug\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-11:38
+	android:maxSdkVersion
+		ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-35
+	android:name
+		ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-64
+intent#action:name:android.intent.action.GET_CONTENT+data:mimeType:*/*
+ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-18:18
+action#android.intent.action.GET_CONTENT
+ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-72
+	android:name
+		ADDED from [:file_picker] D:\RapidFort Project\pdf_man\build\file_picker\intermediates\merged_manifest\debug\AndroidManifest.xml:15:21-69
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+	android:required
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [androidx.window:window:1.0.0-beta04] C:\Users\sajal\.gradle\caches\8.9\transforms\4a1c78b918fd5b9c4bd8f3f13f680dc9\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
