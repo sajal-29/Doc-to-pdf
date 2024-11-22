@@ -1,0 +1,56 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  namespace: converter
+  labels:
+    app: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          image: backend:latest
+          ports:
+            - containerPort: 8080
+          env:
+            - name: SPRING_RABBITMQ_HOST
+              value: rabbitmq-service.converter.svc.cluster.local
+            - name: SPRING_RABBITMQ_PORT
+              value: "5672"
+            - name: SPRING_RABBITMQ_USERNAME
+              value: guest
+            - name: SPRING_RABBITMQ_PASSWORD
+              value: guest
+            - name: STORAGE_LOCATION
+              value: /uploads
+          volumeMounts:
+            - name: storage-volume
+              mountPath: /uploads
+      volumes:
+        - name: storage-volume
+          persistentVolumeClaim:
+            claimName: storage-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: converter
+  labels:
+    app: backend
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  selector:
+    app: backend
+  type: ClusterIP

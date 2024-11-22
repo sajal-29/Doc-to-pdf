@@ -1,17 +1,17 @@
 spring:
   rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
+    host: ${SPRING_RABBITMQ_HOST:localhost}
+    port: ${SPRING_RABBITMQ_PORT:5672}
+    username: ${SPRING_RABBITMQ_USERNAME:guest}
+    password: ${SPRING_RABBITMQ_PASSWORD:guest}
   servlet:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
 
 storage:
-  location: ${user.home}/DocxToPdf/uploads
+  location: ${STORAGE_LOCATION:${user.home}/DocxToPdf/uploads}
 
 queue:
   conversion:
-    name: docx-pdf-conversion-queue
+    name: ${CONVERSION_QUEUE_NAME:docx-pdf-conversion-queue}
