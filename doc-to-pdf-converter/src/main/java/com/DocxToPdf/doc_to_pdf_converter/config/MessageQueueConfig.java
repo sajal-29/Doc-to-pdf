@@ -14,6 +14,7 @@ public class MessageQueueConfig {
     private String queueName;
 
     @Bean
+    @SuppressWarnings("unused")
     Queue conversionQueue() {
         return new Queue(queueName, true);
     }
