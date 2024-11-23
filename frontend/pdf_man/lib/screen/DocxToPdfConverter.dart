@@ -173,15 +173,15 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
               children: [
                 const Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text('File Name', 
-                  textAlign: TextAlign.center,
-                  style: TextStyle(color: Color(0xFFDA8359))),
+                  child: Text('File Name',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Color(0xFFA594F9))),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text(_selectedFileButton!.name, 
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(color: Color(0xFFDA8359))),
+                  child: Text(_selectedFileButton!.name,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Color(0xFFA594F9))),
                 ),
               ],
             ),
@@ -189,11 +189,17 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
               children: [
                 const Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text('File Size',textAlign: TextAlign.center, style: TextStyle(color: Color(0xFFDA8359))),
+                  child: Text(
+                    'File Size',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Color(0xFFA594F9)),
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text('${_selectedFileButton!.size} bytes', textAlign: TextAlign.center,style: const TextStyle(color: Color(0xFFDA8359))),
+                  child: Text('${_selectedFileButton!.size} bytes',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Color(0xFFA594F9))),
                 ),
               ],
             ),
@@ -201,11 +207,15 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
               children: [
                 const Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text('File Extension', textAlign: TextAlign.center,style: TextStyle(color: Color(0xFFDA8359))),
+                  child: Text('File Extension',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Color(0xFFA594F9))),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Text('.${_selectedFileButton!.extension}',textAlign: TextAlign.center, style: const TextStyle(color: Color(0xFFDA8359))),
+                  child: Text('.${_selectedFileButton!.extension}',
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(color: Color(0xFFA594F9))),
                 ),
               ],
             ),
@@ -214,9 +224,10 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
       );
     } else {
       return const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Text('No file selected', textAlign: TextAlign.center,style: TextStyle(color: Color(0xFFA6AEBF)))
-      );
+          padding: EdgeInsets.all(8.0),
+          child: Text('No file selected',
+              textAlign: TextAlign.center,
+              style: TextStyle(color: Color(0xFFA6AEBF))));
     }
   }
 
@@ -232,37 +243,36 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
         title: const Text(
           'PDFify-Me',
           style: TextStyle(
-              color: Color(0xFF89A8B2),
+              color: Color(0xFFA594F9),
               fontWeight: FontWeight.bold,
               fontSize: 35),
         ),
-        backgroundColor: const Color(0xFFB3C8CF),
+        backgroundColor: const Color(0xFFE5D9F2),
         centerTitle: true,
       ),
-      backgroundColor: const Color(0xFFE5E1DA),
+      backgroundColor: const Color(0xFFE5D9F2),
       body: SingleChildScrollView(
+        padding: const EdgeInsets.only(left: 25, right: 25),
         child: Column(
           children: [
-            const SizedBox(
-              height: 40,
-            ),
+            const SizedBox(height: 40),
             const Text(
-              'Lets Get Started !',
+              'Lets Get Started!',
               textAlign: TextAlign.center,
               style: TextStyle(
-                  color: Color(0xFFA6AEBF), fontWeight: FontWeight.w900, fontSize: 30),
+                  color: Color(0xFFA6AEBF),
+                  fontWeight: FontWeight.w900,
+                  fontSize: 30),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             const Text(
               'Convert Your Docx File to Pdf',
               style: TextStyle(
-                  color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 20),
+                  color: Colors.grey,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20),
             ),
-            const SizedBox(
-              height: 40,
-            ),
+            const SizedBox(height: 40),
             Text(
               _isUploaded
                   ? 'Selected File: ${_selectedFileButton!.name}'
@@ -274,88 +284,104 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
                   fontSize: 25,
                   fontWeight: FontWeight.bold),
             ),
-            const SizedBox(
-              height: 20,
-            ),
-            Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  SizedBox(
-                    width: 400,
-                    height: 200,
-                    child: DottedBorder(
-                      borderType: BorderType.Circle,
-                      radius: const Radius.circular(40),
-                      dashPattern: const [10, 10],
-                      color: const Color(0xFFB1C29E),
-                      strokeWidth: 5,
-                      child: Center(
-                          child: Container(
-                        child: _isUploading
-                            ? const CircularProgressIndicator()
-                            : IconButton(
-                                icon: const Icon(
-                                  Icons.upload_file_outlined,
-                                  size: 50,
-                                ),
-                                onPressed: _pickFile,
-                              ),
-                      )),
-                    ),
-                  ),
-                  const SizedBox(height: 20),
-                  _isUploaded
-                      ? Column(
-                          children: [
-                            ElevatedButton(
-                              onPressed: _selectedFileButton == null
-                                  ? _showErrorBar
-                                  : _uploadFile,
-                              child: const Text(
-                                'Convert and Download',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      const Color(0xFF89A8B2)),
-                                  shape: MaterialStateProperty.all(
-                                      ContinuousRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20),
-                                  ))),
+            const SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Left Table
+                Expanded(
+                  flex: 2,
+                  child: _buildLeftTable(),
+                ),
+                // Upload Container in the Center
+                Expanded(
+                  flex: 3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      SizedBox(
+                        width: 200,
+                        height: 200,
+                        child: DottedBorder(
+                          borderType: BorderType.Circle,
+                          radius: const Radius.circular(40),
+                          dashPattern: const [10, 10],
+                          color: const Color(0xFFB1C29E),
+                          strokeWidth: 5,
+                          child: Center(
+                            child: Container(
+                              child: _isUploading
+                                  ? const CircularProgressIndicator()
+                                  : IconButton(
+                                      icon: const Icon(
+                                        Icons.upload_file_outlined,
+                                        size: 50,
+                                      ),
+                                      onPressed: _pickFile,
+                                    ),
                             ),
-                            const SizedBox(
-                              height: 20,
-                            ),
-                            ElevatedButton(
-                              onPressed: _selectedFileButton == null
-                                  ? _showErrorBar
-                                  : _cancelFile,
-                              child: const Text(
-                                'Cancel',
-                                style: TextStyle(color: Colors.white),
-                              ),
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      const Color(0xFF89A8B2)),
-                                  shape: MaterialStateProperty.all(
-                                      ContinuousRectangleBorder(
-                                    borderRadius: BorderRadius.circular(20),
-                                  ))),
-                            ),
-                          ],
-                        )
-                      : const Text(
-                          'Tap the icon to choose a file',
-                          style: TextStyle(
-                              color: Colors.black, fontWeight: FontWeight.bold),
+                          ),
                         ),
-                ],
-              ),
+                      ),
+                      const SizedBox(height: 20),
+                      _isUploaded
+                          ? Column(
+                              children: [
+                                ElevatedButton(
+                                  onPressed: _selectedFileButton == null
+                                      ? _showErrorBar
+                                      : _uploadFile,
+                                  child: const Text(
+                                    'Convert and Download',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              const Color(0xFFA594F9)),
+                                      shape: MaterialStateProperty.all(
+                                          ContinuousRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ))),
+                                ),
+                                const SizedBox(height: 20),
+                                ElevatedButton(
+                                  onPressed: _selectedFileButton == null
+                                      ? _showErrorBar
+                                      : _cancelFile,
+                                  child: const Text(
+                                    'Cancel',
+                                    style: TextStyle(color: Colors.white),
+                                  ),
+                                  style: ButtonStyle(
+                                      backgroundColor:
+                                          MaterialStateProperty.all(
+                                              const Color(0xFFA594F9)),
+                                      shape: MaterialStateProperty.all(
+                                          ContinuousRectangleBorder(
+                                        borderRadius: BorderRadius.circular(20),
+                                      ))),
+                                ),
+                              ],
+                            )
+                          : const Text(
+                              'Tap the icon to choose a file',
+                              style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                    ],
+                  ),
+                ),
+                // Right Table
+                Expanded(
+                  flex: 2,
+                  child: _buildRightTable(),
+                ),
+              ],
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.all(10),
               child: _getFileMetadataTable(),
@@ -363,6 +389,59 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
           ],
         ),
       ),
+    );
+  }
+
+  Widget _buildLeftTable() {
+    return Table(
+      border: TableBorder.all(color: Colors.black),
+      columnWidths: const {
+        0: FlexColumnWidth(2),
+        1: FlexColumnWidth(3),
+      },
+      children: [
+        _buildTableRow('Upload Endpoint', 'POST https://pdofile.shouryadoes.tech/api/v1/convert/docx-to-pdf'),
+        _buildTableRow('Status Endpoint', 'GET https://pdofile.shouryadoes.tech/api/v1/status/{jobId}'),
+        _buildTableRow('Download Endpoint', 'GET https://pdofile.shouryadoes.tech/api/v1/download/{jobId}'),
+      ],
+    );
+  }
+
+  Widget _buildRightTable() {
+    return Table(
+      border: TableBorder.all(color: Colors.black),
+      columnWidths: const {
+        0: FlexColumnWidth(2),
+        1: FlexColumnWidth(3),
+      },
+      children: [
+        _buildTableRow('RabbitMQ UI', 'https://pdofile.shouryadoes.tech/rabbitmq/'),
+        _buildTableRow('Username', 'guest'),
+        _buildTableRow('Password', 'guest'),
+      ],
+    );
+  }
+
+  TableRow _buildTableRow(String col1, String col2) {
+    return TableRow(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            col1,
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: Color(0xFFA594F9)),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Text(
+            col2,
+            textAlign: TextAlign.center,
+            style: const TextStyle(color: Color(0xFFA594F9)),
+          ),
+        ),
+      ],
     );
   }
 }
