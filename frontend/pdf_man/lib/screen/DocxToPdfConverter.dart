@@ -163,7 +163,6 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
       return Padding(
         padding: const EdgeInsets.only(left: 140, right: 140),
         child: Table(
-          
           border: TableBorder.all(color: Colors.black),
           columnWidths: const {
             0: FlexColumnWidth(2),
@@ -190,7 +189,7 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
               children: [
                 const Padding(
                   padding: EdgeInsets.all(8.0),
-                  child: Text('File Size',textAlign: TextAlign.center, style: TextStyle(color: Color(0xFFDA8359)),),
+                  child: Text('File Size',textAlign: TextAlign.center, style: TextStyle(color: Color(0xFFDA8359))),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
@@ -241,128 +240,128 @@ class _DocxToPdfConverterState extends State<DocxToPdfConverter> {
         centerTitle: true,
       ),
       backgroundColor: const Color(0xFFE5E1DA),
-      body: Column(
-        children: [
-          const SizedBox(
-            height: 40,
-          ),
-          const Text(
-            'Lets Get Started !',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: Color(0xFFA6AEBF), fontWeight: FontWeight.w900, fontSize: 30),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          const Text(
-            'Convert Your Docx File to Pdf',
-            style: TextStyle(
-                color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 20),
-          ),
-          const SizedBox(
-            height: 40,
-          ),
-          Text(
-            _isUploaded
-                ? 'Selected File: ${_selectedFileButton!.name}'
-                : 'No File Selected',
-            style: TextStyle(
-                color: _isUploaded
-                    ? const Color.fromARGB(255, 100, 211, 141)
-                    : Colors.black,
-                fontSize: 25,
-                fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SizedBox(
-                  width: 400,
-                  height: 200,
-                  child: DottedBorder(
-                    borderType: BorderType.Circle,
-                    radius: const Radius.circular(40),
-                    dashPattern: const [10, 10],
-                    color: const Color(0xFFB1C29E),
-                    strokeWidth: 5,
-                    child: Center(
-                        child: Container(
-                      child: _isUploading
-                          ? const CircularProgressIndicator()
-                          : IconButton(
-                              icon: const Icon(
-                                Icons.upload_file_outlined,
-                                size: 50,
-                              ),
-                              onPressed: _pickFile,
-                            ),
-                    )),
-                  ),
-                ),
-                const SizedBox(height: 20),
-                _isUploaded
-                    ? Column(
-                        children: [
-                          ElevatedButton(
-                            onPressed: _selectedFileButton == null
-                                ? _showErrorBar
-                                : _uploadFile,
-                            child: const Text(
-                              'Convert and Download',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF89A8B2)),
-                                shape: MaterialStateProperty.all(
-                                    ContinuousRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20),
-                                ))),
-                          ),
-                          const SizedBox(
-                            height: 20,
-                          ),
-                          ElevatedButton(
-                            onPressed: _selectedFileButton == null
-                                ? _showErrorBar
-                                : _cancelFile,
-                            child: const Text(
-                              'Cancel',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            style: ButtonStyle(
-                                backgroundColor: MaterialStateProperty.all(
-                                    const Color(0xFF89A8B2)),
-                                shape: MaterialStateProperty.all(
-                                    ContinuousRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20),
-                                ))),
-                          ),
-                        ],
-                      )
-                    : const Text(
-                        'Tap the icon to choose a file',
-                        style: TextStyle(
-                            color: Colors.black, fontWeight: FontWeight.bold),
-                      ),
-              ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            const SizedBox(
+              height: 40,
             ),
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-
-          Padding(
-            padding: const EdgeInsets.all(10),
-            child: _getFileMetadataTable(),
-          ),
-          
-        ],
+            const Text(
+              'Lets Get Started !',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  color: Color(0xFFA6AEBF), fontWeight: FontWeight.w900, fontSize: 30),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            const Text(
+              'Convert Your Docx File to Pdf',
+              style: TextStyle(
+                  color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            const SizedBox(
+              height: 40,
+            ),
+            Text(
+              _isUploaded
+                  ? 'Selected File: ${_selectedFileButton!.name}'
+                  : 'No File Selected',
+              style: TextStyle(
+                  color: _isUploaded
+                      ? const Color.fromARGB(255, 100, 211, 141)
+                      : Colors.black,
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: 400,
+                    height: 200,
+                    child: DottedBorder(
+                      borderType: BorderType.Circle,
+                      radius: const Radius.circular(40),
+                      dashPattern: const [10, 10],
+                      color: const Color(0xFFB1C29E),
+                      strokeWidth: 5,
+                      child: Center(
+                          child: Container(
+                        child: _isUploading
+                            ? const CircularProgressIndicator()
+                            : IconButton(
+                                icon: const Icon(
+                                  Icons.upload_file_outlined,
+                                  size: 50,
+                                ),
+                                onPressed: _pickFile,
+                              ),
+                      )),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  _isUploaded
+                      ? Column(
+                          children: [
+                            ElevatedButton(
+                              onPressed: _selectedFileButton == null
+                                  ? _showErrorBar
+                                  : _uploadFile,
+                              child: const Text(
+                                'Convert and Download',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      const Color(0xFF89A8B2)),
+                                  shape: MaterialStateProperty.all(
+                                      ContinuousRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20),
+                                  ))),
+                            ),
+                            const SizedBox(
+                              height: 20,
+                            ),
+                            ElevatedButton(
+                              onPressed: _selectedFileButton == null
+                                  ? _showErrorBar
+                                  : _cancelFile,
+                              child: const Text(
+                                'Cancel',
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              style: ButtonStyle(
+                                  backgroundColor: MaterialStateProperty.all(
+                                      const Color(0xFF89A8B2)),
+                                  shape: MaterialStateProperty.all(
+                                      ContinuousRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20),
+                                  ))),
+                            ),
+                          ],
+                        )
+                      : const Text(
+                          'Tap the icon to choose a file',
+                          style: TextStyle(
+                              color: Colors.black, fontWeight: FontWeight.bold),
+                        ),
+                ],
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.all(10),
+              child: _getFileMetadataTable(),
+            ),
+          ],
+        ),
       ),
     );
   }
