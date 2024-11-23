@@ -234,8 +234,7 @@ This script stops and cleans up the Docker environment created by `run_demo.sh`.
 │   │   └── converter.conf
 │   ├── run_demo.sh                    # Script to run the demo
 │   └── stop_demo.sh                   # Script to stop the demo
-├── doc-to-pdf
-│   └── HELP.md                        # Documentation for the backend
+|
 ├── frontend
 │   └── pdf_man                        # Flutter frontend application
 │       ├── lib                        # Flutter Dart files
@@ -244,7 +243,7 @@ This script stops and cleans up the Docker environment created by `run_demo.sh`.
 │       ├── pubspec.yaml               # Flutter project configuration
 │       ├── web                        # Web-specific Flutter files
 │       │   └── index.html
-│       ├── android, ios, linux, macos, windows    # Platform-specific files
+│       |
 │       └── test                       # Frontend test cases
 ├── k8s
 │   ├── converter-namespace.yaml       # Kubernetes namespace configuration
