@@ -26,7 +26,7 @@ jobs:
       # Step 4: Build the Flutter web application
       - name: Build
         working-directory: frontend/pdf_man
-        run: flutter build web
+        run: flutter build web --source-maps --web-renderer=canvaskit
 
       # Step 5: Deploy to GitHub Pages
       - name: Deploy
