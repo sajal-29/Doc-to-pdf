@@ -18,11 +18,11 @@ cleanup_containers() {
   local container=$1
   if [ "$(docker ps -q -f name=$container)" ]; then
     echo -e "${YELLOW}Stopping container: ${container}${NC}"
-    docker stop $container
+    docker stop "$container"
   fi
   if [ "$(docker ps -aq -f name=$container)" ]; then
     echo -e "${YELLOW}Removing container: ${container}${NC}"
-    docker rm $container
+    docker rm "$container"
   fi
 }
 
