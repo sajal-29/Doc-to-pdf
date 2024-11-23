@@ -1,0 +1,40 @@
+name: Deploy to GitHub Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository
+      - uses: actions/checkout@v4
+
+      # Step 2: Set up Flutter
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+
+      # Step 3: Navigate to the Flutter project and download dependencies
+      - name: Download Dependencies
+        working-directory: frontend/pdf_man
+        run: flutter pub get
+
+      # Step 4: Build the Flutter web application
+      - name: Build
+        working-directory: frontend/pdf_man
+        run: flutter build web
+
+      # Step 5: Deploy to GitHub Pages
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: frontend/pdf_man/build/web
+          force_orphan: true
+          user_name: "github-ci[bot]"
+          user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_message: "Publish to gh-pages"
